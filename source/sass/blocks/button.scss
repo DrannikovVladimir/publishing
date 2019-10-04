@@ -25,6 +25,10 @@
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
   }
 
+  &:active {
+    color: darken(#ffffff, 30%);
+  }
+
   &:focus {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
   }

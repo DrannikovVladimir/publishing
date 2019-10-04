@@ -9,7 +9,57 @@
 </head>
 <body>
   <div class="button-wrapper">
-    <button class="button button-reg" type="button" disabled>Зарегистрироваться</button>
+    <button class="button button-reg">Зарегистрироваться</button>
   </div>
+
+  <section class="modal">
+    <form class="form-reg">
+      <h2 class="form-reg__title">Регистрация</h2>
+      <button class="form-reg__close">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <ul class="form-reg__list list-reg">
+        <li class="list-reg__item">
+          <label class="list-reg__label" for="email-field">E-mail</label>
+          <input class="list-reg__input" type="email" id="email-field" name="email" require>
+        </li>
+        <li class="list-reg__item">
+          <label class="list-reg__label" for="nickname-field">Никнейм</label>
+          <input class="list-reg__input" type="text" id="nickname-field" name="nickname" require>
+        </li>
+        <li class="list-reg__item">
+          <label class="list-reg__label" for="password-field">Пароль</label>
+          <input class="list-reg__input" type="password" id="password-field" name="password" require>
+          <p class="list-reg__password-description">Пароль должен содержать:</p>
+          <ul class="test-list">
+            <li class="test-list__item">
+              <input class="chec-list__input" type="checkbox" id="length-field" name="length">
+              <label class="test-list__label" for="length-field">от 6 до 32 символов</label>
+            </li>
+            <li class="test-list__item">
+              <input class="chec-list__input" type="checkbox" id="number-field" name="number">
+              <label class="test-list__label" for="number-field">Цифру</label>
+            </li>
+            <li class="test-list__item">
+              <input class="chec-list__input" type="checkbox" id="letters-field" name="letters">
+              <label class="test-list__label" for="letters-field">Заглавную и строчную букву</label>
+            </li>
+          </ul>
+          <p class="list-reg__password-check">Пароль не должен совпадать с Никнеймом</p>
+        </li>
+        <li class="list-reg__item">
+          <label class="list-reg__label" for="password-repeat-field">Пароль ещё раз</label>
+          <input class="list-reg__input" type="password" id="password-repeat-field" name="password-repeat" require>
+        </li>
+        <li class="list-reg__item">
+          <input class="list-reg__input-agreement" type="checkbox" id="agreement-field" name="agreement">
+          <label class="list-reg__label-agreement" for="agreement-field">
+            Я принимаю условия<a href="agreement.html">Пользовательского соглашения</a>
+          </label>
+        </li>
+      </ul>
+      <button class="button button-reg" type="submit">Зарегистрироваться</button>
+    </form>
+  </section>
 </body>
 </html>
