@@ -40,6 +40,8 @@ button {
   font-weight: bold;
   background-color: #558CB7; }
   .button-reg:hover {
-    background-color: #417298; }
-  .button-reg:active {
-    color: #b3b3b3; }
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4); }
+  .button-reg:focus {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4); }
+  .button-reg:disabled {
+    background-color: #8bb0ce; }
